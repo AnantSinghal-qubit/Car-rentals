@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>The Car Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>THE CAR RENTALS</h1>
+<h2>Rent Your Favourite Car</h2>
+<h2>Our Cars</h2>
+
+<table>
+<tr>
+<th>Image</th>
+<th>Car Name</th>
+<th>Price/Day</th>
+<th>Seats</th>
+<th>Fuel</th>
+<th>Status</th>
+</tr>
+
+<tr>
+<td><img src="https://placehold.co/200x100?text=Innova+Crysta"></td>
+<td>Innova Crysta</td>
+<td>3500</td>
+<td>7</td>
+<td>Diesel</td>
+<td class="yes">Available</td>
+</tr>
+
+<tr>
+<td><img src="https://placehold.co/200x100?text=Ertiga"></td>
+<td>Ertiga</td>
+<td>2500</td>
+<td>7</td>
+<td>Petrol</td>
+<td class="yes">Available</td>
+</tr>
+
+<tr>
+<td><img src="https://placehold.co/200x100?text=Swift+Dzire"></td>
+<td>Swift Dzire</td>
+<td>1800</td>
+<td>5</td>
+<td>Petrol</td>
+<td class="yes">Available</td>
+</tr>
+
+<tr>
+<td><img src="https://placehold.co/200x100?text=Scorpio"></td>
+<td>Scorpio</td>
+<td>3000</td>
+<td>7</td>
+<td>Diesel</td>
+<td class="no">Not Available</td>
+</tr>
+</table>
+
+<h2>Booking Form</h2>
+
+<form id="bookingForm">
+Name:
+<input type="text" required placeholder="Enter your name">
+
+Email:
+<input type="email" required placeholder="Enter your email">
+
+Select Car:
+<select>
+<option>Innova Crysta</option>
+<option>Ertiga</option>
+<option>Swift Dzire</option>
+<option disabled>Scorpio - Not Available</option>
+</select>
+
+Date:
+<input type="date" required>
+
+Number of Days:
+<input type="number" min="1" required>
+
+<button type="submit">Book Now</button>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>

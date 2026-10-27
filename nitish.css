@@ -1,0 +1,65 @@
+body {
+    background-color: lightgray;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    background-color: navy;
+    color: white;
+    padding: 15px;
+}
+
+h2 {
+    color: navy;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: lightblue;
+}
+
+img {
+    width: 120px;
+    height: 70px;
+}
+
+.yes {
+    color: green;
+}
+
+.no {
+    color: red;
+}
+
+form {
+    background-color: white;
+    width: 300px;
+    padding: 15px;
+    margin: auto;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 7px;
+    margin: 7px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: navy;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}

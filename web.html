@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopZone - Online Shopping</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #eaeded;
+        }
+
+        /* Navbar */
+        .navbar {
+            height: 60px;
+            background-color: #131921;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+
+        .search {
+            display: flex;
+            flex: 1;
+            height: 40px;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+        }
+
+        .search button {
+            width: 50px;
+            border: none;
+            background-color: #febd69;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .nav-item {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .cart {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        /* Category bar */
+        .category {
+            background-color: #232f3e;
+            color: white;
+            padding: 12px 20px;
+        }
+
+        .category span {
+            margin-right: 25px;
+            cursor: pointer;
+        }
+
+        /* Hero section */
+        .hero {
+            height: 280px;
+            background: linear-gradient(to right, #c7e9ff, #ffffff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            color: #222;
+        }
+
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        /* Products */
+        .products {
+            padding: 25px;
+        }
+
+        .products h2 {
+            margin-bottom: 20px;
+        }
+
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .product {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .product img {
+            width: 100%;
+            height: 180px;
+            object-fit: contain;
+        }
+
+        .product h3 {
+            margin: 15px 0 10px;
+        }
+
+        .price {
+            color: #b12704;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #ffd814;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background-color: #f7ca00;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 30px;
+            background-color: #131921;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+            .product-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .navbar {
+                flex-wrap: wrap;
+                height: auto;
+                padding: 15px;
+            }
+
+            .search {
+                order: 3;
+                flex-basis: 100%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+
+        <div class="logo">
+            ShopZone
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search products...">
+            <button>🔍</button>
+        </div>
+
+        <div class="nav-item">
+            Hello, Sign in<br>
+            <b>Account</b>
+        </div>
+
+        <div class="nav-item">
+            Returns<br>
+            <b>& Orders</b>
+        </div>
+
+        <div class="cart">
+            🛒 Cart
+        </div>
+
+    </div>
+
+    <!-- Categories -->
+    <div class="category">
+        <span>☰ All</span>
+        <span>Mobiles</span>
+        <span>Laptops</span>
+        <span>Electronics</span>
+        <span>Fashion</span>
+        <span>Books</span>
+        <span>Today's Deals</span>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <h1>Welcome to ShopZone</h1>
+            <p>Everything you need, all in one place!</p>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+
+        <h2>Today's Deals</h2>
+
+        <div class="product-container">
+
+            <!-- Product 1 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/250x180?text=Laptop"
+                     alt="Laptop">
+
+                <h3>Gaming Laptop</h3>
+
+                <p class="price">₹59,999</p>
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/250x180?text=Smartphone"
+                     alt="Smartphone">
+
+                <h3>Smartphone</h3>
+
+                <p class="price">₹19,999</p>
+
+                <p>⭐⭐⭐⭐</p>
+
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/250x180?text=Headphones"
+                     alt="Headphones">
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="price">₹1,499</p>
+
+                <p>⭐⭐⭐⭐⭐</p>
+
+                <button>Add to Cart</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product">
+                <img src="https://via.placeholder.com/250x180?text=Watch"
+                     alt="Smart Watch">
+
+                <h3>Smart Watch</h3>
+
+                <p class="price">₹2,999</p>
+
+                <p>⭐⭐⭐⭐</p>
+
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>ShopZone</h3>
+        <p>© 2026 ShopZone. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

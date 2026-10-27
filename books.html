@@ -1,0 +1,408 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>BookNest - Online Book Store</title>
+</head>
+
+<body bgcolor="lightyellow">
+
+    <!-- HEADER -->
+    <header align="center">
+        <h1>📚 BOOKNEST</h1>
+        <h3>Online Book Shopping Website</h3>
+        <p><b>Read • Learn • Grow</b></p>
+        <hr>
+    </header>
+
+
+    <!-- NAVIGATION -->
+    <nav align="center">
+        <a href="#home">Home</a> |
+        <a href="#books">Books</a> |
+        <a href="#categories">Categories</a> |
+        <a href="#offers">Offers</a> |
+        <a href="#order">Order Now</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <hr>
+
+
+    <!-- HOME SECTION -->
+    <section id="home">
+
+        <h2>🏠 Welcome to BookNest</h2>
+
+        <table border="1" width="100%" cellpadding="10">
+
+            <tr>
+
+                <td align="center">
+
+                    <!-- YOUR GENERATED PHOTO -->
+                    <img src="books.jpg"
+                         alt="Books Collection"
+                         width="500"
+                         height="330">
+
+                </td>
+
+                <td>
+
+                    <h2>Discover Your Next Favourite Book</h2>
+
+                    <p>
+                        Welcome to <b>BookNest</b>, an online book shopping
+                        website for students, readers and book lovers.
+                    </p>
+
+                    <p>
+                        We provide books at
+                        <mark>affordable prices</mark>
+                        with easy ordering and delivery.
+                    </p>
+
+                    <ul>
+                        <li>Programming Books</li>
+                        <li>Engineering Books</li>
+                        <li>Self-Help Books</li>
+                        <li>Novels and Fiction</li>
+                        <li>Competitive Exam Books</li>
+                    </ul>
+
+                </td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+
+    <!-- BOOKS SECTION -->
+    <section id="books">
+
+        <h2>📖 Popular Books</h2>
+
+        <table border="1" width="100%" cellpadding="10">
+
+            <tr bgcolor="lightblue">
+                <th>Book Name</th>
+                <th>Book Image</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+
+            <tr align="center">
+
+                <td><b>Programming</b></td>
+
+                <td>
+                    <img src="books.png"
+                         alt="Programming Books"
+                         width="120"
+                         height="80">
+                </td>
+
+                <td>Various Authors</td>
+
+                <td>₹450</td>
+
+                <td>Available</td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td><b>C++ Programming</b></td>
+
+                <td>
+                    <img src="books.png"
+                         alt="C++ Book"
+                         width="120"
+                         height="80">
+                </td>
+
+                <td>Bjarne Stroustrup</td>
+
+                <td>₹650</td>
+
+                <td>Available</td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td><b>Python Programming</b></td>
+
+                <td>
+                    <img src="books.png"
+                         alt="Python Book"
+                         width="120"
+                         height="80">
+                </td>
+
+                <td>Mark Lutz</td>
+
+                <td>₹550</td>
+
+                <td>Available</td>
+
+            </tr>
+
+            <tr align="center">
+
+                <td><b>Atomic Habits</b></td>
+
+                <td>
+                    <img src="books.png"
+                         alt="Atomic Habits"
+                         width="120"
+                         height="80">
+                </td>
+
+                <td>James Clear</td>
+
+                <td>₹499</td>
+
+                <td>Available</td>
+
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+
+    <!-- CATEGORIES -->
+    <section id="categories">
+
+        <h2>📚 Book Categories</h2>
+
+        <ol>
+            <li>Programming and Technology</li>
+            <li>Science and Engineering</li>
+            <li>Competitive Examination</li>
+            <li>Novels and Fiction</li>
+            <li>Self-Help Books</li>
+            <li>Biography</li>
+        </ol>
+
+        <h3>Popular Choices</h3>
+
+        <ul>
+            <li>C Programming</li>
+            <li>C++ Programming</li>
+            <li>Python</li>
+            <li>Data Structures</li>
+            <li>Web Development</li>
+        </ul>
+
+    </section>
+
+    <hr>
+
+
+    <!-- OFFERS -->
+    <section id="offers">
+
+        <h2>🎁 Special Offers</h2>
+
+        <table border="1" width="70%" align="center" cellpadding="10">
+
+            <tr>
+                <th>Offer</th>
+                <th>Details</th>
+            </tr>
+
+            <tr>
+                <td>Student Discount</td>
+                <td><b>20% OFF</b> on selected books</td>
+            </tr>
+
+            <tr>
+                <td>Free Delivery</td>
+                <td>Free delivery above ₹999</td>
+            </tr>
+
+            <tr>
+                <td>Coupon Code</td>
+                <td><code>READ20</code></td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+
+    <!-- ORDER FORM -->
+    <section id="order">
+
+        <h2>🛒 Order Your Book</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend><b>Customer Details</b></legend>
+
+                <label>Full Name:</label><br>
+
+                <input type="text"
+                       name="name"
+                       placeholder="Enter your name"
+                       required>
+
+                <br><br>
+
+
+                <label>Email:</label><br>
+
+                <input type="email"
+                       name="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <br><br>
+
+
+                <label>Mobile Number:</label><br>
+
+                <input type="tel"
+                       name="mobile"
+                       placeholder="Enter mobile number">
+
+                <br><br>
+
+
+                <label>Select Book:</label><br>
+
+                <select name="book">
+
+                    <option>Programming</option>
+                    <option>C++ Programming</option>
+                    <option>Python Programming</option>
+                    <option>Atomic Habits</option>
+
+                </select>
+
+                <br><br>
+
+
+                <label>Quantity:</label><br>
+
+                <input type="number"
+                       name="quantity"
+                       min="1"
+                       max="10"
+                       value="1">
+
+                <br><br>
+
+
+                <label>Payment Method:</label><br>
+
+                <input type="radio"
+                       name="payment"
+                       value="cod">
+                Cash on Delivery
+
+                <br>
+
+                <input type="radio"
+                       name="payment"
+                       value="upi">
+                UPI
+
+                <br>
+
+                <input type="radio"
+                       name="payment"
+                       value="card">
+                Debit/Credit Card
+
+                <br><br>
+
+
+                <label>Delivery Address:</label><br>
+
+                <textarea rows="5"
+                          cols="40"
+                          placeholder="Enter your complete address"></textarea>
+
+                <br><br>
+
+
+                <input type="checkbox" required>
+                I agree to the terms and conditions.
+
+                <br><br>
+
+
+                <input type="submit" value="Place Order">
+
+                <input type="reset" value="Reset">
+
+            </fieldset>
+
+        </form>
+
+    </section>
+
+    <hr>
+
+
+    <!-- CONTACT -->
+    <section id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+        <address>
+
+            <b>BookNest Book Store</b><br>
+            Delhi Road, India<br>
+
+            Email:
+            <a href="mailto:booknest@example.com">
+                booknest@example.com
+            </a>
+
+            <br>
+
+            Phone: +91 98765 43210
+
+        </address>
+
+    </section>
+
+    <hr>
+
+
+    <!-- FOOTER -->
+    <footer align="center">
+
+        <p>
+            <b>© 2026 BookNest</b> |
+            All Rights Reserved
+        </p>
+
+        <p>
+            <a href="#home">Back to Top ↑</a>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
